@@ -16,19 +16,19 @@ This project was inspired by the [Contextual Attention](https://arxiv.org/abs/18
 
 - First of all, clone this repo
 
-      !git clone https://github.com/morning120429/watermark-remove
+      git clone https://github.com/morning120429/watermark-remove
 
 - Change Directory to the repo
 
-      !cd watermark-removal
+      cd watermark-removal
 
 - Since Google Colab uses the latest Tensorflow 2x version and this project uses 1.15.0, downgrade to Tensorflow 1.15.0 version and restart the runtime, (`although the new version of Google Colab does not need you to restart the runtime`).
 
-      !pip install tensorflow==1.15.0
+      pip install tensorflow==1.15.0
 
 - Install tensorflow toolkit [neuralgym](https://github.com/JiahuiYu/neuralgym).
 
-      !pip install git+https://github.com/JiahuiYu/neuralgym
+      pip install git+https://github.com/JiahuiYu/neuralgym
 
 - Download the model dirs using this [link](https://drive.google.com/drive/folders/1xRV4EdjJuAfsX9pQme6XeoFznKXG0ptJ?usp=sharing) and put it under `model/` (rename `checkpoint.txt` to `checkpoint` because sometimes google drive automatically adds .txt after download)
 
@@ -36,7 +36,7 @@ And you're all Set!!
 
 - Now remove the watermark on the image by runing the `main.py` file
 
-      !python main.py --image path-to-input-image --output path-to-output-image --checkpoint_dir model/ --watermark_type istock
+      python main.py --image path-to-input-image --output path-to-output-image --checkpoint_dir model/ --watermark_type istock
 
 ## Citing
 
