@@ -22,6 +22,12 @@ This project was inspired by the [Contextual Attention](https://arxiv.org/abs/18
 
       cd watermark-removal
 
+- Change Python version to 3.7 because tensorflow 1.15.0 does not support Python 3.8 or higher
+
+- Install the required packages
+
+      pip install -r requirements.txt
+
 - Since Google Colab uses the latest Tensorflow 2x version and this project uses 1.15.0, downgrade to Tensorflow 1.15.0 version and restart the runtime, (`although the new version of Google Colab does not need you to restart the runtime`).
 
       pip install tensorflow==1.15.0
